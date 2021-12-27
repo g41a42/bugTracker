@@ -14,6 +14,20 @@ function App() {
         <li className='projetosAbertosBotao'><a href='#'>Projetos Abertos</a></li>
         <li className='criarProjetosBotao'><a href='#'>Criar Projetos</a></li>
       </ul>
+      <ul className='listaDeProjetos'>
+        <li className='projeto'>
+          <h2>Titulo do Projeto</h2>
+          <p>data da ultima modificação</p>
+          <p>ultima modificação</p>
+          <p>data da criação</p>
+        </li>
+        <li className='projeto'>
+          <h2>Titulo do Projeto</h2>
+          <p>data da ultima modificação</p>
+          <p>ultima modificação</p>
+          <p>data da criação</p>
+        </li>
+      </ul>
     </div>
   );
 }
