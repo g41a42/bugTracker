@@ -4,8 +4,8 @@ function Home (){
 return(
     <div>
         <ul className='projetosMenu'>
-            <li className='botaoClaro'><a href='#'>Projetos Abertos</a></li>
-            <li className='botaoEscuro'><a href='#'>Criar Projetos</a></li>
+            <li className='botaoClaro'><a href='http://localhost:3000'>Projetos Abertos</a></li>
+            <li className='botaoEscuro'><a href='http://localhost:3000/Criar'>Criar Projetos</a></li>
         </ul>
         <ul className='listaDeProjetos'>
             <li className='projeto'>

@@ -4,8 +4,8 @@ function Cria (){
 return(
     <div>
     <ul className='projetosMenu'>
-        <li className='botaoEscuro'><a href='#'>Projetos Abertos</a></li>
-        <li className='botaoClaro'><a href='#'>Criar Projetos</a></li>
+        <li className='botaoEscuro'><a href='http://localhost:3000'>Projetos Abertos</a></li>
+        <li className='botaoClaro'><a href='http://localhost:3000/Criar'>Criar Projetos</a></li>
     </ul>
     <div className="criacao">
         <div className="form">
