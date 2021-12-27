@@ -10,6 +10,10 @@ function App() {
         <li className='navItem'><a href='#'>Perfis</a></li>
         <li className='navItem'><a href='#'>Mensagens</a></li>
       </ul>
+      <ul className='projetosMenu'>
+        <li className='projetosAbertosBotao'><a href='#'>Projetos Abertos</a></li>
+        <li className='criarProjetosBotao'><a href='#'>Criar Projetos</a></li>
+      </ul>
     </div>
   );
 }
