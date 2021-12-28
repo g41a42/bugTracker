@@ -1,35 +1,43 @@
-import React from "react"
-import '../css/criaProjeto.css'
-function Cria (){
-return(
+import React from "react";
+import "../css/criaProjeto.css";
+function Cria() {
+  return (
     <div>
-    <ul className='projetosMenu'>
-        <li className='botaoEscuro'><a href='http://localhost:3000'>Projetos Abertos</a></li>
-        <li className='botaoClaro'><a href='http://localhost:3000/Criar'>Criar Projetos</a></li>
-    </ul>
-    <div className="criacao">
+      <ul className="projetosMenu">
+        <li className="botaoEscuro">
+          <a href="http://localhost:3000">Projetos Abertos</a>
+        </li>
+        <li className="botaoClaro">
+          <a href="http://localhost:3000/Criar">Criar Projetos</a>
+        </li>
+      </ul>
+      <div className="criacao">
         <div className="form">
-            <form>
-                <label >Titulo do Projeto</label><br />
-                <input className="inputTituloDoProjeto"></input><br />
-                <label>Descrição do Projeto</label><br />
-                <input className="inputDescricaoDoProjeto"></input>
-            </form>
+          <form>
+            <label>Titulo do Projeto</label>
+            <br />
+            <textarea className="inputTituloDoProjeto"></textarea>
+            <br />
+            <label>Descrição do Projeto</label>
+            <br />
+            <textarea className="inputDescricaoDoProjeto"></textarea>
+          </form>
         </div>
         <div className="envolvidos">
-            <h2>Envolvidos</h2>
-            <ul>
-                <li>
-                    <h3>Nome</h3>
-                    <p>Função</p>
-                </li>
-            </ul>
-            <form>
-                <label>Adicionar Dev</label>
-                <input></input>
-            </form>
+          <h2>Envolvidos</h2>
+          <ul>
+            <li>
+              <h3>Nome</h3>
+              <p>Função</p>
+            </li>
+          </ul>
+          <form>
+            <label>Adicionar Dev</label>
+            <input></input>
+          </form>
         </div>
+      </div>
     </div>
-    </div>
-)}
-export default Cria
+  );
+}
+export default Cria;
