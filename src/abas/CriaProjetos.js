@@ -21,7 +21,8 @@ function Cria() {
             <br />
             <label>Descrição do Projeto</label>
             <br />
-            <textarea className="inputDescricaoDoProjeto"></textarea>
+            <textarea className="inputDescricaoDoProjeto"></textarea><br/>
+            <button type="submit">Criar Projeto</button>
           </form>
         </div>
         <Envolvidos />

@@ -70,6 +70,14 @@
     padding: 0;
     width: 15rem;
 }
+form button{
+    background-color: transparent;
+    border: none;
+    color: #f5f0f6;
+    cursor: pointer;
+    margin: 0 10%;
+    width: 80%;
+}
 .inputDescricaoDoProjeto{
     height: 9rem;
 }
