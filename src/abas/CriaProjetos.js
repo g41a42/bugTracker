@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/criaProjeto.css";
+import Envolvidos from "./Envolvidos"; 
 function Cria() {
   return (
     <div>
@@ -23,19 +24,7 @@ function Cria() {
             <textarea className="inputDescricaoDoProjeto"></textarea>
           </form>
         </div>
-        <div className="envolvidos">
-          <h2>Envolvidos</h2>
-          <ul>
-            <li>
-              <h3>Nome</h3>
-              <p>Função</p>
-            </li>
-          </ul>
-          <form>
-            <label>Adicionar Dev</label>
-            <input></input>
-          </form>
-        </div>
+        <Envolvidos />
       </div>
     </div>
   );
