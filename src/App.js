@@ -4,16 +4,19 @@ import Home from "./abas/home.js";
 import Cria from "./abas/CriaProjetos.js";
 import Nav from "./abas/nav.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route exect path="/" element={<Home />} />
-        <Route path="/Criar" element={<Cria />} />
-      </Routes>
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <Nav />
+        <Routes>
+          <Route exect path="/" element={<Home />} />
+          <Route path="/Criar" element={<Cria />} />
+        </Routes>
+      </Router>
+    </GlobalProvider>
   );
 }
 
