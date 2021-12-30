@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/projetosAbertos.css";
+import ListaProjetos from './ListaProjetos'
 function Home() {
   return (
     <div>
@@ -11,20 +12,7 @@ function Home() {
           <a href="/Criar">Criar Projetos</a>
         </li>
       </ul>
-      <ul className="listaDeProjetos">
-        <li className="projeto">
-          <h2>Titulo do Projeto</h2>
-          <p>data da ultima modificação</p>
-          <p>ultima modificação</p>
-          <p>data da criação</p>
-        </li>
-        <li className="projeto">
-          <h2>Titulo do Projeto</h2>
-          <p>data da ultima modificação</p>
-          <p>ultima modificação</p>
-          <p>data da criação</p>
-        </li>
-      </ul>
+      <ListaProjetos />
     </div>
   );
 }
