@@ -5,7 +5,7 @@ function Nav() {
     <div>
       <ul className="navMenu">
         <li className="navItem">
-          <a href="http://localhost:3000">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="navItem">
           <a href="#">Perfis</a>

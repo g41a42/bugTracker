@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exect path="/" element={<Home />} />
         <Route path="/Criar" element={<Cria />} />
       </Routes>
     </Router>
