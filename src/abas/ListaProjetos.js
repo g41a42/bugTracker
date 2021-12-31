@@ -9,6 +9,7 @@ function ListaProjetos() {
         return (
           <li key={projeto.id} className="projeto">
             <h2>{projeto.titulo}</h2>
+            <p>{projeto.descricao}</p>
             <p>data da ultima modificação</p>
             <p>ultima modificação</p>
             <p>data da criação</p>

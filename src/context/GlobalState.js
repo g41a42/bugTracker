@@ -2,9 +2,9 @@ import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
 const initialState = {
   projetos: [
-    { id: 1, titulo: "projeto um" },
-    { id: 2, titulo: "projeto dois" },
-    { id: 3, titulo: "projeto três" }
+    { id: 1, titulo: "projeto um", descricao: 'Descrição' },
+    { id: 2, titulo: "projeto dois", descricao: 'Descrição2'  },
+    { id: 3, titulo: "projeto três", descricao: 'Descrição3'  }
   ],
 };
 export const GlobalContext = createContext(initialState);
