@@ -12,7 +12,7 @@ function ListaProjetos() {
             <p>{projeto.descricao}</p>
             <p>data da ultima modificação</p>
             <p>ultima modificação</p>
-            <p>data da criação</p>
+            <p>{projeto.data}</p>
           </li>
         );
       })}

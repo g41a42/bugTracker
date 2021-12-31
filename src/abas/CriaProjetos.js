@@ -5,8 +5,17 @@ import { addProjeto, GlobalContext } from "../context/GlobalState";
 import { useNavigate, Link } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 function Cria() {
+  const today = () => {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
+    let yyyy = today.getFullYear();
+    today = dd + '/' + mm + '/' + yyyy;
+    return today
+  }
   const [titulo, setTitulo] = useState("");
   const [descricao, setDesc] = useState("");
+  const [data, setData] = useState("")
   const { addProjeto } = useContext(GlobalContext);
   const navigate = useNavigate();
   const criarProjeto = (e) => {
@@ -16,6 +25,7 @@ function Cria() {
       id: uuid(),
       titulo: titulo,
       descricao: descricao,
+      data: data
     };
     addProjeto(novoProjeto);
   };
@@ -24,6 +34,7 @@ function Cria() {
   };
   const mudaDesc = (e) => {
     setDesc(e.target.value);
+    setData(today);
   };
   return (
     <div>
