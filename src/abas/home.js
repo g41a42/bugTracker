@@ -1,4 +1,5 @@
 import React,{ Component } from "react";
+import { Link } from "react-router-dom";
 import "../css/projetosAbertos.css";
 import ListaProjetos from "./ListaProjetos";
 class Home extends Component {
@@ -7,10 +8,14 @@ class Home extends Component {
       <div>
         <ul className="projetosMenu">
           <li className="botaoClaro">
-            <a href="/">Projetos Abertos</a>
+            <Link to="/">
+            <p >Projetos Abertos</p>
+            </Link>
           </li>
           <li className="botaoEscuro">
-            <a href="/Criar">Criar Projetos</a>
+            <Link to="/Criar">
+            <p>Criar Projetos</p>
+            </Link>
           </li>
         </ul>
         <ListaProjetos />

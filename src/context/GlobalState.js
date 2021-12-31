@@ -10,10 +10,17 @@ const initialState = {
 export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
+  const addProjeto = (projeto) => {
+      dispatch ({
+          type: 'ADD_PROJETO',
+          payload: projeto
+      })
+  }
   return (
     <GlobalContext.Provider
       value={{
-        projetos: state.projetos
+        projetos: state.projetos,
+        addProjeto
       }}
     >
       {children}

@@ -7,7 +7,7 @@ function ListaProjetos() {
     <ul className="listaDeProjetos">
       {projetos.map((projeto) => {
         return (
-          <li className="projeto">
+          <li key={projeto.id} className="projeto">
             <h2>{projeto.titulo}</h2>
             <p>data da ultima modificação</p>
             <p>ultima modificação</p>
