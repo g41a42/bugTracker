@@ -4,11 +4,14 @@ import Envolvidos from "./Envolvidos";
 import "../css/Projetos.css";
 class Projetos extends Component {
   render() {
+    const noClick = {
+    cursor: 'default'
+    }
     return (
       <div className="all">
         <ul className="projetosMenu">
           <li className="botaoClaro">
-            <Link to="/Projetos">
+            <Link to="#" style={noClick}>
               <p>Titulo do Projeto</p>
             </Link>
           </li>

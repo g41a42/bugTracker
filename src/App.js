@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route exect path="/" element={<Home />} />
           <Route path="/Criar" element={<Cria />} />
-          <Route path="/Projetos" element={<Projetos />} />
+          <Route path="/Projetos/:id" element={<Projetos />} />
         </Routes>
       </Router>
     </GlobalProvider>
