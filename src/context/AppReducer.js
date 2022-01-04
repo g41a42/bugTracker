@@ -4,6 +4,7 @@ export default (state, action) => {
       return {
         projetos: [action.payload, ...state.projetos],
       };
+      return {};
     default:
       return state;
   }
